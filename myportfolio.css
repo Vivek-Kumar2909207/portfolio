@@ -28,6 +28,7 @@ body { background:#0b1721; color:#d3e2ee; font-family:'Poppins','Consolas',monos
   .nav-list { margin:16px 0;}
   .menu-toggle { display:block; }
 }
+
 #home {
   display:flex; align-items:center; justify-content:space-between;
   flex-wrap:wrap; min-height:78vh; padding:0 5vw; position:relative; z-index:1;
@@ -54,9 +55,9 @@ body { background:#0b1721; color:#d3e2ee; font-family:'Poppins','Consolas',monos
   padding:11px 26px;
   border-radius:30px;
   font-weight:800;
-  text-decoration:none; letter-spacing:.03em;
+  letter-spacing:.03em;
   box-shadow:0 4px 28px #34d39943;
-  outline:none; border:none; margin-top:19px; display:inline-block;
+  margin-top:19px; display:inline-block;
   transition: background .2s, color .2s, box-shadow .2s;
 }
 #home-div a:hover {
@@ -69,12 +70,14 @@ body { background:#0b1721; color:#d3e2ee; font-family:'Poppins','Consolas',monos
   display:flex; align-items:center; justify-content:center;
   margin-top:20px;
 }
-#logo img { width:100%; height:100%; object-fit:cover; border-radius:50%; border:none; }
+#logo img { width:100%; height:100%; object-fit:cover; border-radius:50%; }
+
 section { padding:44px 6vw; background: none; z-index: 1; }
 h2 { color:#34d399; font-size:2rem; font-weight:800; letter-spacing:.04em; margin-bottom:10px; text-shadow:0 0 7px #8ecae655;}
 .me2 { font-size:18px; font-weight:600; letter-spacing:1.2px; line-height:1.7; color:#a7e8e6; }
 .py-highlight { color: #ffe066; font-family:'Consolas',monospace;}
 .ds-highlight { color: #8ecae6; font-family:'Consolas',monospace;}
+
 .project-card { background:#11202acc; border-radius:12px; margin-bottom:20px; padding:20px 22px; box-shadow: 0 2px 18px #8ecae60d; border:1.6px solid #0f2924;}
 .project-card h3 { color:#34D399; margin-bottom:6px; font-family:'Consolas',monospace,'Poppins',sans-serif;}
 .project-card p { color:#e1e7ef; margin-bottom:8px; }
@@ -82,38 +85,50 @@ h2 { color:#34d399; font-size:2rem; font-weight:800; letter-spacing:.04em; margi
   display:inline-block; margin-top:10px; color:#1f263b;
   background:#8ecae6;
   padding:9px 20px; border-radius:6px; font-weight:800;
-  text-decoration:none; box-shadow:0 2px 12px #22d3ee10;
+  box-shadow:0 2px 12px #22d3ee10;
   font-family:'Consolas',monospace,'Poppins',sans-serif;
   transition: background .16s, color .17s, border .17s;
 }
 .project-card a:hover { background:#34d399; color:#003f25; }
+
+.project-video {
+  width: 50%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .svg-icon { display:inline-block; width:20px; height:20px; vertical-align:middle; margin-right:7px; fill:#34d399;}
 .svg-icon.linkedin { fill:#1d87c8;}
 #footer .svg-icon { vertical-align:-4px; }
+
 #plain-info { margin:18px 0 24px 0;}
 .plain-detail { color:#fff; font-weight:600; font-size:1.08rem; margin-bottom:6px; }
+
 #social-links { margin:4px 0 0 0; display:flex; flex-wrap:wrap; gap:2rem;}
 .social-link {
   color:#fff; font-size:19px; font-weight:700; background:#1c2633;
   border-radius:22px; padding:11px 22px 11px 17px;
   transition:.2s; display:inline-flex; align-items:center; gap:9px;
-  text-decoration:none; box-shadow:0 2px 18px #8ecae629;
-  margin-bottom:10px;
+  box-shadow:0 2px 18px #8ecae629;
 }
 .social-link:hover { background:#34d399; color:#101826; box-shadow:0 4px 24px #34d39940;}
-.inline-social {
-  margin:0 2px; text-decoration:none; vertical-align:middle;
-  font-size:1.13rem; opacity:.84;
-}
+
+.inline-social { margin:0 2px; font-size:1.13rem; opacity:.84;}
 .inline-social .svg-icon { width:20px; height:20px;}
+
 .fade-in { opacity:0; transform:translateY(28px); transition:all .7s cubic-bezier(.4,2,.82,.98);}
 .fade-in.visible { opacity:1; transform:translateY(0);}
+
 #footer {
   background:#192233cc; color:#c9d1d9;
   text-align:center; padding:15px 0;
   font-size:1.09rem; border-top:1.5px solid #24435580;
-  box-shadow: 0 -1px 14px #10263631; letter-spacing:.011em;
+  box-shadow: 0 -1px 14px #10263631;
 }
+
 @media (max-width:1000px) {
   #home { flex-direction: column; text-align: center; }
   #logo { margin:auto; }
